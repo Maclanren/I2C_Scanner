@@ -1,7 +1,7 @@
 #include <Wire.h>
 void setup()
 {
-  Wire.begin(27,26);
+  Wire.begin(27,26);           // SDA=27 SCL=26
   Serial.begin(9600);
   while (!Serial);             // Leonardo: wait for serial monitor
   Serial.println("\nI2C Scanner");
