@@ -35,9 +35,16 @@ I2C device found at address 0x20  !
 done**"  
 
 Notes on the Code  
- Initialization: The Wire.begin() function initializes the I2C bus, and Serial.begin(115200) sets up the serial communication at a baud rate of 115200.  
- Scanning: The for loop iterates through all possible I2C addresses (from 1 to 127). For each address, it attempts to communicate using Wire.beginTransmission(address) and checks the result with     Wire.endTransmission().  
- Output: If a device responds (error == 0), its address is printed. If there is an unknown error (error == 4), it prints an error message. If no devices are found, it prints "No I2C devices found".  
+ Initialization:   
+   The Wire.begin() function initializes the I2C bus, and Serial.begin(115200) sets up the serial communication at a baud rate of 115200.  
+ Scanning: 
+   The for loop iterates through all possible I2C addresses (from 1 to 127).  
+   For each address, it attempts to communicate using Wire.  
+   beginTransmission(address) and checks the result with Wire.endTransmission().  
+ Output:
+   If a device responds (error == 0), its address is printed.   
+   If there is an unknown error (error == 4), it prints an error message.  
+   If no devices are found, it prints "No I2C devices found".  
  This program allows you to easily detect and confirm the addresses of I2C devices connected to the ESP32.  
 
 ![图片描述](https://github.com/Maclanren/I2C_Scanner/blob/main/I2c-scan.png?raw=true)
