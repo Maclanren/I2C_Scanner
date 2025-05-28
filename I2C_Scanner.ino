@@ -1,12 +1,16 @@
 #include <Wire.h>
+void Get_I2C_ADD();
 void setup()
 {
-  Wire.begin(27,26);           // SDA=27 SCL=26
-  Serial.begin(9600);
+  Wire.begin(27,26);            // ESP32 SDA=27 SCL=26
+  Serial.begin(115200);
   while (!Serial);             // Leonardo: wait for serial monitor
-  Serial.println("\nI2C Scanner");
+  Serial.println("I2C Scanner\n");
+  Serial.println("Scanning for I2C devices...\n");
+  delay(100);       // delay100ms,and then scan I2C address
+  Get_I2C_ADD();    // scan only once
 }
-void loop()
+void Get_I2C_ADD()
 {
   byte error, address;
   int nDevices;
@@ -41,4 +45,8 @@ void loop()
   else
     Serial.println("done\n");
   delay(500);           // wait 5 seconds for next scan
+}
+void loop()
+{
+     //Continuous scanning will write Get_I2C_ADD(); into the main loop.
 }
