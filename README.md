@@ -26,15 +26,7 @@ Pull-up Resistors:
 Example Output  
  Assuming an I2C device with address 0x20 is connected, the program output might be as follows:  
 
-<span style="background-color: black; color: black;">
-I2C Scanner  
- 
-Scanning for I2C devices...
-  
-Scanning...  
-I2C device found at address 0x20  !  
-done
-</span>
+![图片描述](https://github.com/Maclanren/I2C_Scanner/blob/main/output-example.png?raw=true)
 
 Notes on the Code  
  Initialization:   
