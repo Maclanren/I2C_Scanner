@@ -25,13 +25,13 @@ Pull-up Resistors:
 Example Output
  Assuming an I2C device with address 0x20 is connected, the program output might be as follows:
 
-**I2C Scanner
+"**I2C Scanner
 
 Scanning for I2C devices...
  
 Scanning...
 I2C device found at address 0x20  !
-done**
+done**"
 
 Notes on the Code
  Initialization: The Wire.begin() function initializes the I2C bus, and Serial.begin(115200) sets up the serial communication at a baud rate of 115200.
