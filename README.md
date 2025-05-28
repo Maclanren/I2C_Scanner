@@ -25,7 +25,8 @@ Pull-up Resistors:
  The I2C bus requires pull-up resistors, typically connecting a 4.7kΩ resistor to 3.3V on both the SDA and SCL lines.  
 Example Output  
  Assuming an I2C device with address 0x20 is connected, the program output might be as follows:  
-  
+
+<div style="background-color: black; color: white;">
 "**I2C Scanner  
   
 Scanning for I2C devices...
@@ -33,6 +34,7 @@ Scanning for I2C devices...
 Scanning...  
 I2C device found at address 0x20  !  
 done**"  
+</div>
 
 Notes on the Code  
  Initialization:   
