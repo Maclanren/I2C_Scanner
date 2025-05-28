@@ -1,7 +1,7 @@
 # I2C_Scanner
-Initialize I2C and Serial Communication:
- Use Wire.begin() to initialize the I2C bus.
- Use Serial.begin(115200) to initialize serial communication for outputting the scan results.
+Initialize I2C and Serial Communication:  
+ Use Wire.begin() to initialize the I2C bus.  
+ Use Serial.begin(115200) to initialize serial communication for outputting the scan results.  
 
 Scan I2C Devices:
  Use Wire.beginTransmission(address) to attempt communication with each possible I2C address.
