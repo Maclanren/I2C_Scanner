@@ -27,14 +27,13 @@ Example Output
  Assuming an I2C device with address 0x20 is connected, the program output might be as follows:  
 
 <span style="background-color: black; color: black;">
-**I2C Scanner  
-  
+I2C Scanner  
+ 
 Scanning for I2C devices...
   
 Scanning...  
 I2C device found at address 0x20  !  
-done**
-
+done
 </span>
 
 Notes on the Code  
